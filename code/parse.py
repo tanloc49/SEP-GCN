@@ -15,8 +15,8 @@ def parse_args():
                         help="the batch size for bpr loss training procedure")
     parser.add_argument('--lr', type=float,default=0.001,
                         help="the learning rate")
-    parser.add_argument('--dataset', type=str,default='bkk',
-                        help="available datasets: [nyc, bkk, tko]")
+    parser.add_argument('--dataset', type=str,default='brightkite',
+                        help="available datasets: [nyc, bkk, tko, gowalla, brightkite]")
     parser.add_argument('--n_cluster', type=float, default=100)
     parser.add_argument('--model', type=str, default='sepgcn', help='rec-model, support [sepgcn]')
 
